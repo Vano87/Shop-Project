@@ -1,0 +1,84 @@
+body {
+  font-family: Rajdhani,Arial,sans-serif;
+  font-size: 100%;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+.wrapper {
+  width: 95%;
+  max-width: 1600px;
+  height: auto;
+  margin: 0 auto;
+  background: #ded;
+}
+
+/*======================Header============================*/
+header {
+
+}
+.top-header {
+  background-color: #c5c5c5;
+}
+.carousel-item li {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.78em;
+  text-align: center; 
+}
+.container {
+  position: relative;
+}
+.poster {
+  position: absolute;
+  bottom: 33%;    /*290px*/
+  left: 15%;       /*200px*/
+
+}
+.h1 {
+  font-size: 2.2em;
+  color: #000;
+  margin: 10px 0;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 2px solid #000;
+  padding: 0 15px;
+  text-align: center;
+}
+span {
+  font-weight: 700;
+}
+.h2 {
+  font-size: 1.5em;
+  font-family: 'Courier New';
+  text-transform: uppercase;
+  margin: 10px 0 60px;
+  text-align: center;
+}
+.confira {
+  text-transform: uppercase;
+  border: 2px solid #393939;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding: 5px 10px;
+  text-align: center;
+  color: #000;
+  margin: 0 90px;
+}
+
+
+@media screen and (max-width: 40em) {
+body {
+  font-size: 60%;
+}
+.poster {
+  max-width: 50%;
+}
+/*======================Navigation============================*/

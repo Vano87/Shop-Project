@@ -21,14 +21,20 @@
     {
       "uid": "559647a6f430b3aeadbecd67194451dd",
       "css": "menu",
-      "code": 59410,
+      "code": 59394,
       "src": "fontawesome"
     },
     {
       "uid": "dad4e7f8dc2e57c92cffc0231202d9a0",
       "css": "instagram",
-      "code": 59394,
+      "code": 59395,
       "src": "brandico"
+    },
+    {
+      "uid": "d73eceadda1f594cec0536087539afbf",
+      "css": "heart",
+      "code": 59396,
+      "src": "fontawesome"
     }
   ]
 }

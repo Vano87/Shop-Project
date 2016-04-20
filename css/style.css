@@ -22,7 +22,6 @@ li {
 
 /*======================Header============================*/
 header {
-
 }
 .top-header {
   background-color: #c5c5c5;
@@ -77,25 +76,53 @@ span {
 nav {
   background-color: #000;
 }
+/*External View Menu*/
+.menu {
+  width: 100%;
+  margin: 20px;
+}
 .menu a {
   color: #fff;
   background: #3d3d3d;
   display: block;
   border-bottom: 1px solid #666;
   transition: .5s;
+  padding-left: 15px;
 }
 .menu a:hover {
   background: #666;
-  /*padding: */
 }
-.h2-main {
+/*Drop-down Menu*/
+
+.menu-list {
+  position: relative;
+  display: inline-block;
+  width: 19%;
+}
+.menu-drop {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  opacity: 0;
+  display: none;
+  transition: 1s opacity;
+  border-top: 7px solid transparent;
+}
+.menu-list:hover .menu-drop {
+  opacity: 1;
+  display: block;
+  transition: 1s opacity;
+}
+/*Haedlines*/
+
+.h2-nav {
   color: #fff;
   text-align: center;
   font-weight: 700;
   font-size: 1.875em;
   margin: 10px 0;
 }
-.h3{
+.h3 {
   color: #fff;
   font-size: 1.625em;
   font-weight: 500;
@@ -107,7 +134,25 @@ nav {
   height: 22px;
   color: #fff;
 }
+/*======================Products-slider============================*/
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*======================Media============================*/
 
 @media screen and (max-width: 40em) {
 body {
@@ -117,4 +162,3 @@ body {
   max-width: 50%;
 }
 
-px;

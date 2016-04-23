@@ -17,11 +17,12 @@ li {
   max-width: 1600px;
   height: auto;
   margin: 0 auto;
-  background: #ded;
+  background: #fff;
 }
 
 /*======================Header============================*/
 header {
+
 }
 .top-header {
   background-color: #c5c5c5;
@@ -106,12 +107,12 @@ nav {
   opacity: 0;
   display: none;
   transition: 1s opacity;
-  border-top: 7px solid transparent;
+  /*border-top: 7px solid transparent;*/
 }
 .menu-list:hover .menu-drop {
   opacity: 1;
   display: block;
-  transition: 1s opacity;
+  transition: 1s;
 }
 /*Haedlines*/
 
@@ -120,7 +121,8 @@ nav {
   text-align: center;
   font-weight: 700;
   font-size: 1.875em;
-  margin: 10px 0;
+  margin: 0;
+  padding: 10px 10px;
 }
 .h3 {
   color: #fff;
@@ -135,14 +137,107 @@ nav {
   color: #fff;
 }
 /*======================Products-slider============================*/
+main {
+   max-width: 1220px;
+   margin: 0 auto;
+}
+.subtitle {
+  text-align: center;
+  position: relative;
+}
+h3.department {
+  color: #393939;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: ;      
+}
+.buy {
+  text-align: center;
+  position: relative;
+}
+.buy a {
+  position: absolute;
+  text-transform: uppercase;
+  width: 100%;
+  color: #fff;
+  bottom: 0;
+  right: 0;
+  padding: 2px 0;
+  opacity: 0;
+  font-weight: 600;
+  font-size: 1em;
+}
+.slider-photo:hover .buy a {
+  transition: .6s;
+  opacity: 1;
+  background-color: rgba(0, 0, 0, 0.66);
+}
+p.price {
+  text-align: center;
+  margin: 0;
+  color: #000;
+  font-size: 0.93em;
+  font-weight: 400;
+}
 
+/*======================Categories============================*/
+.logo {
+  margin: 40px auto;
+  display: block;
+}
+.photo-block {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.photo-block:nth-of-type(even) {
+  float: right;
+}
+h2.header-categories {
+  position: absolute;
+  text-align: center;
+  top: 35%;
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  font-size: 2.11em;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 0px #141518;
+}
 
-
-
-
-
-
-
+/*======================Gallery-instagram============================*/
+.insta-block {
+  position: relative;
+  display: inline-block;
+}
+.cover-bg,
+.likes {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.likes {
+  top: 35%;
+}
+.likes p {
+  margin: 0;
+}
+.insta-block:hover .likes,
+.insta-block:hover .cover-bg {
+  display: block;
+}
+.cover-bg {
+  background: rgba(0, 0, 0, 0.66);
+}
+.likes {
+  font-size: 1.6em; 
+  color: #fff;
+  text-align: center;
+}
 
 
 

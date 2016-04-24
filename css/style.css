@@ -6,7 +6,7 @@ a {
   text-decoration: none;
 }
 ul {
-  margin: 0;
+  margin:  0;
   padding: 0;
 }
 li {
@@ -207,10 +207,22 @@ h2.header-categories {
 }
 
 /*======================Gallery-instagram============================*/
+.magic-1 {
+  text-align: justify;
+  line-height: 0;
+}
+.magic-1:after {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+}
 .insta-block {
   position: relative;
   display: inline-block;
-  margin: 0 5px;
+  text-align: left;
 }
 .cover-bg,
 .likes {
@@ -223,9 +235,12 @@ h2.header-categories {
 }
 .likes {
   top: 35%;
+  font-size: 1.6em; 
+  color: #fff;
+  text-align: center;
 }
 .likes p {
-  margin: 0;
+  padding: 5px 0;
 }
 .insta-block:hover .likes,
 .insta-block:hover .cover-bg {
@@ -234,11 +249,110 @@ h2.header-categories {
 .cover-bg {
   background: rgba(0, 0, 0, 0.66);
 }
-.likes {
-  font-size: 1.6em; 
-  color: #fff;
-  text-align: center;
+
+
+/*======================Show-man============================*/
+
+.magic-2 {
+  text-align: justify;
+  line-height: 0;
 }
+.magic-2:after {
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+  overflow: hidden;
+  content: '';
+  display: inline-block;
+}
+.man-block {
+  position: relative;
+  display: inline-block;
+  text-align: left;
+}
+.photo-man {
+  display: none;
+  position: absolute;
+  top: 40%;
+  right: 29%;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.man-block:hover .photo-man,
+.man-block:hover .cover-bg  {
+  display: block;
+}
+
+/*======================Form Registration============================*/
+
+form {
+  margin: 70px 0;
+}
+.button {
+  background: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.2em;
+  padding: 10px 65px;
+}
+.newsletter {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #393939;
+  text-align: center;
+  padding: 10px 80px;
+  margin: 0 5px;
+  border: 2px solid #d0d0d0;
+  box-sizing: border-box;
+  background-color: rgba(153, 153, 153, 0);
+  text-transform: uppercase;
+}
+.submit {
+  color: #393939;
+  font-weight: 600;
+  font-size: 1.2em;
+  background-color:  #d0d0d0;
+  box-shadow: 2px 3px 0px 0px rgba(20, 21, 24, 0.75);
+  padding: 10px 65px;
+  text-transform: uppercase;
+}
+
+/*======================Footer============================*/
+footer {
+  background: #000;
+}
+.wrapper-footer {
+  max-width: 1220px;
+  margin: 0 auto;
+  min-height: 36px;
+}
+.contacts {
+  font-size: 1em;
+  font-weight: 400;
+  text-transform: uppercase;
+  display: inline;
+  line-height: 10px;
+}
+.contacts li {
+  display: inline;
+  padding: 0px 5px;
+}
+.contacts li a,
+.social-networks li a{
+  color: #fff;
+}
+.social-networks {
+  float: right;
+  font-size: 1.2em;
+}
+.social-networks li {
+  display: inline;
+  padding: 10px 1px;
+}
+
+
 
 
 

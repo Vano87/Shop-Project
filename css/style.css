@@ -13,7 +13,7 @@ li {
   list-style: none;
 }
 .wrapper {
-  width: 95%;
+  width: 100%;
   max-width: 1600px;
   height: auto;
   margin: 0 auto;
@@ -27,11 +27,30 @@ header {
 .top-header {
   background-color: #c5c5c5;
 }
+.wrapper-carousel .bx-wrapper .bx-pager {
+  /*position: absolute;*/
+  text-align: right;
+  bottom: 5px;
+  right: 100px;
+}
+.wrapper-carousel .bx-wrapper .bx-pager.bx-default-pager a {
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background: #c5c5c5;
+  border: 1px solid #010202;
+}
 .carousel-item li {
+  text-align: center;
+}
+.carousel-item li p {
+  margin: 5px;
+}
+.carousel-item li a {
   color: #fff;
   font-weight: 700;
-  font-size: 0.78em;
-  text-align: center; 
+  font-size: .75;
+  text-transform: uppercase;
 }
 .container {
   position: relative;
@@ -326,14 +345,13 @@ footer {
 .wrapper-footer {
   max-width: 1220px;
   margin: 0 auto;
-  min-height: 36px;
+  height: 36px;
 }
 .contacts {
   font-size: 1em;
   font-weight: 400;
   text-transform: uppercase;
   display: inline;
-  line-height: 10px;
 }
 .contacts li {
   display: inline;

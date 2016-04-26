@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"> 
   <link rel="stylesheet" type="text/css" href="fonts/fontello-5f2d43d2/css/fontello.css">
   <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+  <script src="js/jquery.bxslider.min.js"></script>
   <title>Shop C&F</title>
 </head>
 <body>
@@ -15,11 +17,13 @@
     <!------------------------------ Header ------------------------------>
     <header>
       <div class="top-header">
-        <ul class="carousel-item">
-          <li>Frete Grtis Para Compras Acima de R$300.00</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit amet, consectetur adipisicing.</li>
-        </ul>
+        <div class="wrapper-carousel">
+          <ul class="carousel-item">
+            <li><a href="#"><p>Frete Grtis Para Compras Acima de R$300.00</p></a></li>
+            <li><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p></a></li>
+            <li><a href="#"><p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p></a></li>
+          </ul>
+        </div>
       </div>
         <ul class="banner-slider">
           <div class="container">
@@ -322,23 +326,16 @@
 
 
 
-
-
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-  <script src="js/jquery.bxslider.min.js"></script>
   <script>
-
     $(document).ready(function() {
       $('.banner-slider').bxSlider({
         startSlide : 2,
         adaptiveHeight : true,
         controls : false,
-        captions : true,
-        // auto : true,
-        // pause : 4000,
+        auto : true,
+        pause : 4000,
       });
       });
-
     $(document).ready(function() {
       $('.clothes-photo').bxSlider({
         minSlides: 3,
@@ -347,6 +344,11 @@
         slideMargin: 10,
         pager : false,
         controls : true
+});
+});
+    $(document).ready(function() {
+  $('.carousel-item').bxSlider({
+    startSlide : 2,
 });
 });
   </script>
